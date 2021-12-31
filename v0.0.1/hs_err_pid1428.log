@@ -1,0 +1,58 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_IN_PAGE_ERROR (0xc0000006) at pc=0x6375fab0, pid=1428, tid=0x000028d8
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_191-b12) (build 1.8.0_191-b12)
+# Java VM: Java HotSpot(TM) Client VM (25.191-b12 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0x24fab0]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x28e17c00):  JavaThread "AWT-EventQueue-0" [_thread_in_vm, id=10456, stack(0x29f70000,0x29fc0000)]
+
+siginfo: ExceptionCode=0xc0000006, ExceptionInformation=0x00000008 0x6375fab0 0xc0000098 
+
+Registers:
+EAX=0x00000000, EBX=0x00000000, ECX=0x00dfe000, EDX=0x00000014
+ESP=0x29fbe684, EBP=0x29fbe6c0, ESI=0x28e17c00, EDI=0x28e17c00
+EIP=0x6375fab0, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x29fbe684)
+0x29fbe684:   6367376e 6366b975 28e17c00 2617cbb8
+0x29fbe694:   2617cbb8 2617cb00 29fbe68c 00000000
+0x29fbe6a4:   00000000 00000000 00000000 fffffffe
+0x29fbe6b4:   29fbe6c4 635173f4 28e17c00 29fbe6e0
+0x29fbe6c4:   63612c72 28e17c00 28e17c00 00000006
+0x29fbe6d4:   28e17c00 2617cbb8 2617cbb8 29fbe724
+0x29fbe6e4:   6caa50a8 00000000 03ccdaf1 28e17d40
+0x29fbe6f4:   29fbe72c 00000000 2617cbb8 03ccd8c6 
+
+Instructions: (pc=0x6375fab0)
+0x6375fa90:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xc0000006]
+
+Register to memory mapping:
+
+EAX=0x00000000 is an unknown value
+EBX=0x00000000 is an unknown value
+ECX=0x00dfe000 is an unknown value
+EDX=0x00000014 is an unknown value
+ESP=0x29fbe684 is pointing into the stack for thread: 0x28e17c00
+EBP=0x29fbe6c0 is pointing into the stack for thread: 0x28e17c00
+ESI=0x28e17c00 is a thread
+EDI=0x28e17c00 is a thread
+
+
+Stack: [0x29f70000,0x29fc0000],  sp=0x29fbe684,  free space=313k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x24fab0]
+V  [jvm.dll+0x102c72]
+C  [java.dll+0x50a8]
